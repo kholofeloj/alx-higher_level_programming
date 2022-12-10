@@ -1,5 +1,5 @@
 #!/usr/bin/pythton3
 
 def search_replace(my_list, search, replace):
-    my_list = [number if number != search else replace for number in my_list]
-    return my_list
+    result = [replace if item == search else item for item in my_list]
+    return result
